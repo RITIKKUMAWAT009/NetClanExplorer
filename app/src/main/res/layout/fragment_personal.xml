@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PersonalFragment">
+    tools:context=".fragment.PersonalFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <EditText
+            android:id="@+id/etSearch"
             android:layout_width="300dp"
             android:background="@drawable/bg_edit_text"
             android:autofillHints="name"
@@ -20,18 +21,19 @@
             android:paddingEnd="5dp"
             android:drawablePadding="15dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"/>
-        <ImageButton
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="20dp"
-            android:src="@drawable/icon_menu"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_filter"
             android:contentDescription="@string/icon_refine"
-            android:background="@color/black"/>
+            />
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPersonal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

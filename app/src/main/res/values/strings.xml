@@ -8,4 +8,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">Search</string>
+    <string name="ab">UN</string>
+    <string name="username">user name</string>
+    <string name="loc_dev">location | Android developer</string>
+    <string name="within">Within 4 KM</string>
+    <string name="hii_community">Hii community!</string>
+    <string name="coffie_friendship_business">Coffee | Friendship | Business</string>
+    <string name="invite">+ INVITE</string>
 </resources>
