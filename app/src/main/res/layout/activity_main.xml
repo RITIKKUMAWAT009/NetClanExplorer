@@ -54,10 +54,10 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
                 android:layout_gravity="end"
                 android:background="@color/toolbar"
                 android:contentDescription="@string/icon_refine"
+                android:padding="2dp"
                 android:src="@drawable/icon_refine" />
 
             <TextView
@@ -67,19 +67,24 @@
                 android:textColor="@color/white" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
-            android:background="#13303E"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@color/tabLayout"
+            app:tabTextColor="@color/white" />
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
+            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>
