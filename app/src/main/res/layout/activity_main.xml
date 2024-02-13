@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,9 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+       >
 
         <ImageButton
             android:layout_width="40dp"
@@ -84,7 +82,53 @@
             android:id="@+id/viewPager"
             android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_weight="1"
+            android:layout_height="0dp" >
+        </androidx.viewpager.widget.ViewPager>
+     <androidx.coordinatorlayout.widget.CoordinatorLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <com.google.android.material.bottomappbar.BottomAppBar
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:backgroundTint="@color/white">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 app:drawableTopCompat="@drawable/icon_explore"
+                 android:layout_marginStart="30dp"
+                 android:text="@string/explore"
+                 android:textColor="@color/black"/>
+             <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:drawableTopCompat="@drawable/network_server_data_svgrepo_com"
+             android:layout_marginStart="30dp"
+             android:text="@string/explore"
+             android:textColor="@color/black"/>
+             <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:drawableTopCompat="@drawable/icon_chat"
+             android:layout_marginStart="30dp"
+             android:text="@string/explore"
+             android:textColor="@color/black"/>
+             <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:drawableTopCompat="@drawable/icon_contact"
+             android:layout_marginStart="30dp"
+             android:text="@string/explore"
+             android:textColor="@color/black"/>
+             <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:drawableTopCompat="@drawable/icon_group"
+             android:layout_marginStart="30dp"
+             android:text="@string/explore"
+             android:textColor="@color/black"/>
+         </com.google.android.material.bottomappbar.BottomAppBar>
+     </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </LinearLayout>
 
 </LinearLayout>
