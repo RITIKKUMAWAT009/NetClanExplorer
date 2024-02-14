@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="toolbar">#0e2e44</color>
     <color name="tabLayout">#143d59</color>
+    <color name="tvlogo">#143d59</color>
 </resources>

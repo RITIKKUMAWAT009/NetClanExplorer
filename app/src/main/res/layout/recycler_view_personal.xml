@@ -28,7 +28,7 @@
             android:layout_marginTop="5dp"
             android:textStyle="bold"/>
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:padding="5dp"
     android:layout_marginTop="30dp"
@@ -120,8 +120,8 @@
     android:layout_height="wrap_content"
     android:text="@string/ab"
     android:layout_gravity="center"
-    android:textColor="#143d59"
-    android:textSize="50sp"
+    android:textColor="@color/tvlogo"
+    android:textSize="30sp"
    />
     </androidx.cardview.widget.CardView>
 

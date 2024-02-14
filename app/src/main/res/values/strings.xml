@@ -16,4 +16,6 @@
     <string name="coffie_friendship_business">Coffee | Friendship | Business</string>
     <string name="invite">+ INVITE</string>
     <string name="explore">explore</string>
+    <string name="icon_call">icon_call</string>
+    <string name="add_friend">add friend</string>
 </resources>

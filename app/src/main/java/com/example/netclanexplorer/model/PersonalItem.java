@@ -5,15 +5,13 @@ public class PersonalItem {
     private String location;
     private String distance;
     private String tag;
-    private String userLogo;
     private String msgToCommunity;
 public PersonalItem(){}
-    public PersonalItem(String userName, String location, String distance, String tag, String userLogo, String msgToCommunity) {
+    public PersonalItem(String userName, String location, String distance, String tag, String msgToCommunity) {
         this.userName = userName;
         this.location = location;
         this.distance = distance;
         this.tag = tag;
-        this.userLogo = userLogo;
         this.msgToCommunity = msgToCommunity;
     }
 
@@ -40,23 +38,12 @@ public PersonalItem(){}
     public void setDistance(String distance) {
         this.distance = distance;
     }
-
     public String getTag() {
         return tag;
     }
-
     public void setTag(String tag) {
         this.tag = tag;
     }
-
-    public String getUserLogo() {
-        return userLogo;
-    }
-
-    public void setUserLogo(String userLogo) {
-        this.userLogo = userLogo;
-    }
-
     public String getMsgToCommunity() {
         return msgToCommunity;
     }
