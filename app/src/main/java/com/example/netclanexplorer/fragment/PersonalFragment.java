@@ -33,18 +33,18 @@ public class PersonalFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         List<PersonalItem> dataList = new ArrayList<>();
-        dataList.add(new PersonalItem("John Doe", "City, Country", "5 km", "#Traveler", "AB", "Hello, community!"));
-        dataList.add(new PersonalItem("Jane Smith", "Another City", "10 km", "#Foodie", "AB", "Greetings!"));
-        dataList.add(new PersonalItem("Alice Wonderland", "Wonderland City", "15 km", "#Adventurer", "AB", "Hello from Wonderland!"));
-        dataList.add(new PersonalItem("Bob Explorer", "Explorer City", "8 km", "#Explorer", "AB", "Greetings, fellow explorers!"));
-        dataList.add(new PersonalItem("Charlie Foodie", "Foodie City", "12 km", "#FoodLover", "AB", "Food is life!"));
-        dataList.add(new PersonalItem("David Traveler", "Travel City", "20 km", "#Wanderlust", "AB", "Wander often, wonder always."));
-        dataList.add(new PersonalItem("Eva Nomad", "Nomad City", "25 km", "#NomadLife", "AB", "Living the nomad dream!"));
-        dataList.add(new PersonalItem("Frank Adventurer", "Adventure City", "18 km", "#AdventureTime", "AB", "Adventure awaits!"));
-        dataList.add(new PersonalItem("Grace Explorer", "Explorer City", "8 km", "#Explorer", "AB", "Let's explore together!"));
-        dataList.add(new PersonalItem("Henry Foodie", "Foodie City", "12 km", "#FoodLover", "AB", "Foodie for life."));
-        dataList.add(new PersonalItem("Isabel Traveler", "Travel City", "20 km", "#Wanderlust", "AB", "Wandering and wondering."));
-        dataList.add(new PersonalItem("Jack Nomad", "Nomad City", "25 km", "#NomadLife", "AB", "Nomadic soul."));
+        dataList.add(new PersonalItem("John Doe", "City, Country", "5 km", "Traveler | Foodie | Foodie", "Hello, community!"));
+        dataList.add(new PersonalItem("Jane Smith", "Another City", "10 km", "Foodie | Foodie | Adventurer", "Greetings!"));
+        dataList.add(new PersonalItem("Alice Wonderland", "Wonderland City", "15 km", "Adventurer | Adventurer | Foodie", "Hello from Wonderland!"));
+        dataList.add(new PersonalItem("Bob Explorer", "Explorer City", "8 km", "Explorer | Foodie | Foodie", "Greetings, fellow explorers!"));
+        dataList.add(new PersonalItem("Charlie Foodie", "Foodie City", "12 km", "FoodLover | Foodie | Adventurer", "Food is life!"));
+        dataList.add(new PersonalItem("David Traveler", "Travel City", "20 km", "Wanderlust | Foodie | Foodie", "Wander often, wonder always."));
+        dataList.add(new PersonalItem("Eva Nomad", "Nomad City", "25 km", "NomadLife | Foodie | Foodie", "Living the nomad dream!"));
+        dataList.add(new PersonalItem("Frank Adventurer", "Adventure City", "18 km", "AdventureTime | Foodie | Adventurer", "Adventure awaits!"));
+        dataList.add(new PersonalItem("Grace Explorer", "Explorer City", "8 km", "Explorer | Foodie | Foodie", "Let's explore together!"));
+        dataList.add(new PersonalItem("Henry Foodie", "Foodie City", "12 km", "FoodLover | Foodie | Adventurer", "Foodie for life."));
+        dataList.add(new PersonalItem("Isabel Traveler", "Travel City", "20 km", "Wanderlust | Adventurer | Foodie", "Wandering and wondering."));
+        dataList.add(new PersonalItem("Jack Nomad", "Nomad City", "25 km", "NomadLife | Foodie | Adventurer", "Nomadic soul."));
 
         personalAdapter = new PersonalAdapter(dataList,getActivity());
         recyclerView.setAdapter(personalAdapter);
