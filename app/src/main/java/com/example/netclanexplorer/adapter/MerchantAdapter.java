@@ -15,44 +15,38 @@ import com.example.netclanexplorer.model.PersonalItem;
 
 import java.util.List;
 
-public class PersonalAdapter extends RecyclerView.Adapter<PersonalAdapter.PersonalViewHolder> {
-    private final List<PersonalItem> data;
-    private final Context context;
-
-    public PersonalAdapter(List<PersonalItem> data, Context context) {
-        this.data = data;
-        this.context = context;
-    }
-
+public class MerchantAdapter extends RecyclerView.Adapter<MerchantAdapter.ViewHolder> {
+  private   List<PersonalItem> data;
+   private Context context;
+          public   MerchantAdapter(Context context,List<PersonalItem>data){
+        this.data=data;
+        this.context=context;
+            }
     @NonNull
     @Override
-    public PersonalAdapter.PersonalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.recycler_view_personal, parent, false);
-        return new PersonalViewHolder(view);
+    public MerchantAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= LayoutInflater.from(context).inflate(R.layout.recycle_view_merchant,parent,false);
+        return  new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull PersonalAdapter.PersonalViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MerchantAdapter.ViewHolder holder, int position) {
         PersonalItem personalItem = data.get(position);
         String charOfFirstAndSurname = Constants.getCharOfFirstAndSurname(personalItem.getUserName());
         holder.tvUserName.setText(personalItem.getUserName());
-        holder.tvTag.setText(personalItem.getTag());
         holder.tvUserLogo.setText(charOfFirstAndSurname);
         holder.tvLocation.setText(personalItem.getLocation());
         holder.tvDistance.setText(personalItem.getDistance());
         holder.tvMsgToCommunity.setText(personalItem.getMsgToCommunity());
-
     }
-
     @Override
     public int getItemCount() {
         return data.size();
     }
 
-    public static class PersonalViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvUserName, tvLocation, tvUserLogo, tvMsgToCommunity, tvTag, tvDistance;
-
-        public PersonalViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvUserName = itemView.findViewById(R.id.tvUserName);
             tvLocation = itemView.findViewById(R.id.tvLocation);
