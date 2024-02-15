@@ -25,5 +25,5 @@
     <string name="select_hyper_local_distance">Select Hyper local Distance</string>
     <string name="purpose">Purpose</string>
     <string name="select_purpose">Select Purpose</string>
-    <string name="save_explore"><![CDATA[Save & Explore]]></string>
+    <string name="save_explore">Save & Explore></string>
 </resources>
