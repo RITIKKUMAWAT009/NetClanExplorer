@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <resources>
+            <string-array name="text_array">
+                <item>Available | Hey Let Us Connect</item>
+                <item>Away | Stay Discrete And Watch</item>
+                <item>Busy | Do Not Disturb | Will Catch Up Later</item>
+                <item>SOS | Emergency! Need Assistance! HELP</item>
+            </string-array>
+        </resources>

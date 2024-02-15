@@ -5,4 +5,7 @@
     <color name="toolbar">#0e2e44</color>
     <color name="tabLayout">#143d59</color>
     <color name="tvlogo">#143d59</color>
+    <color name="custom_radio_button_checked_color">#00FF00</color>
+    <color name="custom_radio_button_unchecked_color">#FF0000</color>
+    <color name="custom_radio_button_text_color">#000000</color>
 </resources>
