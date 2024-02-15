@@ -4,6 +4,8 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
-
+    <style name="Button.White" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorAccent">#050B0E</item>
+    </style>
     <style name="Theme.NetclanExplorer" parent="Base.Theme.NetclanExplorer" />
 </resources>

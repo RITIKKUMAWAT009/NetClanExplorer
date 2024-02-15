@@ -5,7 +5,6 @@
     <string name="location">Location</string>
     <string name="icon_refine">icon_refine</string>
     <string name="refine">Refine</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">Search</string>
     <string name="ab">UN</string>
@@ -18,4 +17,13 @@
     <string name="explore">explore</string>
     <string name="icon_call">icon_call</string>
     <string name="add_friend">add friend</string>
+    <string name="tv_refine">Refine</string>
+    <string name="back_arrow">back arrow</string>
+    <string name="select_your_availability">Select Your Availability</string>
+    <string name="add_your_status">Add Your Status</string>
+    <string name="hi_community_i_am_open_to_new_connection">Hi community! I am open to new connection \"😊\"</string>
+    <string name="select_hyper_local_distance">Select Hyper local Distance</string>
+    <string name="purpose">Purpose</string>
+    <string name="select_purpose">Select Purpose</string>
+    <string name="save_explore">Save & Explore></string>
 </resources>
